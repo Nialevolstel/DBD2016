@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  surgery_id: 
+  monto_total: 1
+  receipt_state_id: 
+
+two:
+  surgery_id: 
+  monto_total: 1
+  receipt_state_id: 

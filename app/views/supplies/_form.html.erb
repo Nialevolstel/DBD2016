@@ -1,0 +1,33 @@
+<%= form_for(@supply) do |f| %>
+  <% if @supply.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@supply.errors.count, "error") %> prohibited this supply from being saved:</h2>
+
+      <ul>
+      <% @supply.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_insumo %><br>
+    <%= f.text_field :nombre_insumo %>
+  </div>
+  <div class="field">
+    <%= f.label :stock_insumo %><br>
+    <%= f.number_field :stock_insumo %>
+  </div>
+  <div class="field">
+    <%= f.label :costo_insumo %><br>
+    <%= f.number_field :costo_insumo %>
+  </div>
+  <div class="field">
+    <%= f.label :article_clasification_id %><br>
+    <%= f.text_field :article_clasification_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

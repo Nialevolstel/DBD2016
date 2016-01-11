@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_insumo: MyString
+  stock_insumo: 1
+  costo_insumo: 1
+  article_clasification_id: 
+
+two:
+  nombre_insumo: MyString
+  stock_insumo: 1
+  costo_insumo: 1
+  article_clasification_id: 

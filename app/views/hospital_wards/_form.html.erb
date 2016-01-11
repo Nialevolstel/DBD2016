@@ -1,0 +1,21 @@
+<%= form_for(@hospital_ward) do |f| %>
+  <% if @hospital_ward.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hospital_ward.errors.count, "error") %> prohibited this hospital_ward from being saved:</h2>
+
+      <ul>
+      <% @hospital_ward.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :numero_sala %><br>
+    <%= f.number_field :numero_sala %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

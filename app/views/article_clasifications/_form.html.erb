@@ -1,0 +1,21 @@
+<%= form_for(@article_clasification) do |f| %>
+  <% if @article_clasification.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@article_clasification.errors.count, "error") %> prohibited this article_clasification from being saved:</h2>
+
+      <ul>
+      <% @article_clasification.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_clasificacion %><br>
+    <%= f.text_field :nombre_clasificacion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

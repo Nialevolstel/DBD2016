@@ -1,0 +1,103 @@
+
+.navbar-image{
+	width: 65px;
+}
+
+.navbar-default{
+  background-color: #f8f8f8;
+}
+#devise_navbar{
+	background-color: #FFFFFF;
+	/**background-color: #20AA8C;**/
+	border: none;
+}
+
+#devise_background{
+    background-image: url("bg4.jpg");
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    height: 100%;
+}
+
+#new_user{
+	background-color: white;
+	border-radius: 15px;
+	padding: 40px 30px
+}
+
+
+.overlay{
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+    opacity:0,8;
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255,0.5);
+}
+
+.devise-container{
+	margin-top: 15%;
+
+}
+
+.relative{
+	position: relative;
+}
+
+
+#devise_submit{
+	position: absolute;
+ 	bottom: -5%;
+  	right: -14px;
+ 	padding: 10px 60px;
+}
+
+.alert{
+  color: red;
+  padding: 0px;
+  text-align: center;
+}
+
+.notice{
+  color: red;
+  padding: 0px;
+  text-align: center;
+}
+
+.navbar-brand_custom{
+  padding: 0px;
+  margin-right: 15px;
+  border-top-right-radius: 360px;
+  height: 50px;
+  width: 50px;
+
+}
+
+.navbar-custom{
+  border-color: black;
+  background-color: white;
+}
+
+.navbar-header > a:hover, .navbar-header > a:focus {
+    background-color: rgb(255, 241, 219);
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #DBDBDB;
+    
+}
+
+
+.navbar-default .navbar-nav>li>a{
+  color: #777;
+}
+
+.navbar-default .navbar-nav>li> a:hover, .navbar-default .navbar-nav>li> a:hover {
+  color: black;
+}

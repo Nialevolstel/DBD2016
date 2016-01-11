@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hospital_ward_id: 
+  surgery_id: 
+  fecha_inicio: 2016-01-09
+  hora_inicio: 2016-01-09 19:38:39
+  fecha_fin: 2016-01-09
+  hora_fin: 2016-01-09
+
+two:
+  hospital_ward_id: 
+  surgery_id: 
+  fecha_inicio: 2016-01-09
+  hora_inicio: 2016-01-09 19:38:39
+  fecha_fin: 2016-01-09
+  hora_fin: 2016-01-09

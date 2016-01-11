@@ -1,0 +1,29 @@
+<%= form_for(@surgery_supply) do |f| %>
+  <% if @surgery_supply.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@surgery_supply.errors.count, "error") %> prohibited this surgery_supply from being saved:</h2>
+
+      <ul>
+      <% @surgery_supply.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :surgery_id %><br>
+    <%= f.text_field :surgery_id %>
+  </div>
+  <div class="field">
+    <%= f.label :supply_id %><br>
+    <%= f.text_field :supply_id %>
+  </div>
+  <div class="field">
+    <%= f.label :cantidad_utilizada %><br>
+    <%= f.number_field :cantidad_utilizada %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

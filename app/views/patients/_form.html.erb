@@ -1,0 +1,53 @@
+<%= form_for(@patient) do |f| %>
+  <% if @patient.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@patient.errors.count, "error") %> prohibited this patient from being saved:</h2>
+
+      <ul>
+      <% @patient.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :rut_paciente %><br>
+    <%= f.text_field :rut_paciente %>
+  </div>
+  <div class="field">
+    <%= f.label :primer_nombre %><br>
+    <%= f.text_field :primer_nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :segundo_nombre %><br>
+    <%= f.text_field :segundo_nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido_paterno %><br>
+    <%= f.text_field :apellido_paterno %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido_materno %><br>
+    <%= f.text_field :apellido_materno %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_nacimiento %><br>
+    <%= f.date_select :fecha_nacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :sexo %><br>
+    <%= f.text_field :sexo %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_fijo %><br>
+    <%= f.text_field :telefono_fijo %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_movil %><br>
+    <%= f.text_field :telefono_movil %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

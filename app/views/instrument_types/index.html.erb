@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Instrument Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Article clasification</th>
+      <th>Nombre instrumentaria</th>
+      <th>Descripcion instrumentaria</th>
+      <th>Precio por hora</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @instrument_types.each do |instrument_type| %>
+      <tr>
+        <td><%= instrument_type.article_clasification %></td>
+        <td><%= instrument_type.nombre_instrumentaria %></td>
+        <td><%= instrument_type.descripcion_instrumentaria %></td>
+        <td><%= instrument_type.precio_por_hora %></td>
+        <td><%= link_to 'Show', instrument_type %></td>
+        <td><%= link_to 'Edit', edit_instrument_type_path(instrument_type) %></td>
+        <td><%= link_to 'Destroy', instrument_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Instrument type', new_instrument_type_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Article clasification:</strong>
+  <%= @instrument_type.article_clasification %>
+</p>
+
+<p>
+  <strong>Nombre instrumentaria:</strong>
+  <%= @instrument_type.nombre_instrumentaria %>
+</p>
+
+<p>
+  <strong>Descripcion instrumentaria:</strong>
+  <%= @instrument_type.descripcion_instrumentaria %>
+</p>
+
+<p>
+  <strong>Precio por hora:</strong>
+  <%= @instrument_type.precio_por_hora %>
+</p>
+
+<%= link_to 'Edit', edit_instrument_type_path(@instrument_type) %> |
+<%= link_to 'Back', instrument_types_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Medical team:</strong>
+  <%= @medical_team_medical_staff.medical_team %>
+</p>
+
+<p>
+  <strong>Medical staff:</strong>
+  <%= @medical_team_medical_staff.medical_staff %>
+</p>
+
+<p>
+  <strong>Speciality:</strong>
+  <%= @medical_team_medical_staff.speciality %>
+</p>
+
+<%= link_to 'Edit', edit_medical_team_medical_staff_path(@medical_team_medical_staff) %> |
+<%= link_to 'Back', medical_team_medical_staffs_path %>

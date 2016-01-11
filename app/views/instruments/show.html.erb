@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Instrument type:</strong>
+  <%= @instrument.instrument_type %>
+</p>
+
+<p>
+  <strong>Hospital ward:</strong>
+  <%= @instrument.hospital_ward %>
+</p>
+
+<%= link_to 'Edit', edit_instrument_path(@instrument) %> |
+<%= link_to 'Back', instruments_path %>

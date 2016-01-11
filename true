@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20160109215155_add_rut_gestor_to_users.rb

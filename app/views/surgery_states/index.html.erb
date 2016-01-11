@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Surgery States</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre estado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @surgery_states.each do |surgery_state| %>
+      <tr>
+        <td><%= surgery_state.nombre_estado %></td>
+        <td><%= link_to 'Show', surgery_state %></td>
+        <td><%= link_to 'Edit', edit_surgery_state_path(surgery_state) %></td>
+        <td><%= link_to 'Destroy', surgery_state, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Surgery state', new_surgery_state_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Surgery Type Instrument Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Surgery type</th>
+      <th>Instrument type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @surgery_type_instrument_types.each do |surgery_type_instrument_type| %>
+      <tr>
+        <td><%= surgery_type_instrument_type.surgery_type %></td>
+        <td><%= surgery_type_instrument_type.instrument_type %></td>
+        <td><%= link_to 'Show', surgery_type_instrument_type %></td>
+        <td><%= link_to 'Edit', edit_surgery_type_instrument_type_path(surgery_type_instrument_type) %></td>
+        <td><%= link_to 'Destroy', surgery_type_instrument_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Surgery type instrument type', new_surgery_type_instrument_type_path %>

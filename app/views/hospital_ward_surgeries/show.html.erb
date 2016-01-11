@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hospital ward:</strong>
+  <%= @hospital_ward_surgery.hospital_ward %>
+</p>
+
+<p>
+  <strong>Surgery:</strong>
+  <%= @hospital_ward_surgery.surgery %>
+</p>
+
+<p>
+  <strong>Fecha inicio:</strong>
+  <%= @hospital_ward_surgery.fecha_inicio %>
+</p>
+
+<p>
+  <strong>Hora inicio:</strong>
+  <%= @hospital_ward_surgery.hora_inicio %>
+</p>
+
+<p>
+  <strong>Fecha fin:</strong>
+  <%= @hospital_ward_surgery.fecha_fin %>
+</p>
+
+<p>
+  <strong>Hora fin:</strong>
+  <%= @hospital_ward_surgery.hora_fin %>
+</p>
+
+<%= link_to 'Edit', edit_hospital_ward_surgery_path(@hospital_ward_surgery) %> |
+<%= link_to 'Back', hospital_ward_surgeries_path %>

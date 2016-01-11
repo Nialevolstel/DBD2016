@@ -1,0 +1,25 @@
+<%= form_for(@surgery_type_instrument_type) do |f| %>
+  <% if @surgery_type_instrument_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@surgery_type_instrument_type.errors.count, "error") %> prohibited this surgery_type_instrument_type from being saved:</h2>
+
+      <ul>
+      <% @surgery_type_instrument_type.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :surgery_type_id %><br>
+    <%= f.text_field :surgery_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :instrument_type_id %><br>
+    <%= f.text_field :instrument_type_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

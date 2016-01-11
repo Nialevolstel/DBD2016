@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Surgery:</strong>
+  <%= @surgery_supply.surgery %>
+</p>
+
+<p>
+  <strong>Supply:</strong>
+  <%= @surgery_supply.supply %>
+</p>
+
+<p>
+  <strong>Cantidad utilizada:</strong>
+  <%= @surgery_supply.cantidad_utilizada %>
+</p>
+
+<%= link_to 'Edit', edit_surgery_supply_path(@surgery_supply) %> |
+<%= link_to 'Back', surgery_supplies_path %>

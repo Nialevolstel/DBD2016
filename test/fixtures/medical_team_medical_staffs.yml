@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  medical_team_id: 
+  medical_staff_id: 
+  speciality_id: 
+
+two:
+  medical_team_id: 
+  medical_staff_id: 
+  speciality_id: 

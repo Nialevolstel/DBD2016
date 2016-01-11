@@ -1,0 +1,41 @@
+<%= form_for(@hospital_ward_surgery) do |f| %>
+  <% if @hospital_ward_surgery.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hospital_ward_surgery.errors.count, "error") %> prohibited this hospital_ward_surgery from being saved:</h2>
+
+      <ul>
+      <% @hospital_ward_surgery.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hospital_ward_id %><br>
+    <%= f.text_field :hospital_ward_id %>
+  </div>
+  <div class="field">
+    <%= f.label :surgery_id %><br>
+    <%= f.text_field :surgery_id %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_inicio %><br>
+    <%= f.date_select :fecha_inicio %>
+  </div>
+  <div class="field">
+    <%= f.label :hora_inicio %><br>
+    <%= f.time_select :hora_inicio %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_fin %><br>
+    <%= f.date_select :fecha_fin %>
+  </div>
+  <div class="field">
+    <%= f.label :hora_fin %><br>
+    <%= f.date_select :hora_fin %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

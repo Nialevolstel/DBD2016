@@ -1,0 +1,2 @@
+module MedicalStaffSpecialitiesHelper
+end

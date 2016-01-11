@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre insumo:</strong>
+  <%= @supply.nombre_insumo %>
+</p>
+
+<p>
+  <strong>Stock insumo:</strong>
+  <%= @supply.stock_insumo %>
+</p>
+
+<p>
+  <strong>Costo insumo:</strong>
+  <%= @supply.costo_insumo %>
+</p>
+
+<p>
+  <strong>Article clasification:</strong>
+  <%= @supply.article_clasification %>
+</p>
+
+<%= link_to 'Edit', edit_supply_path(@supply) %> |
+<%= link_to 'Back', supplies_path %>

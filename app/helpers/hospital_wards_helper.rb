@@ -1,0 +1,2 @@
+module HospitalWardsHelper
+end

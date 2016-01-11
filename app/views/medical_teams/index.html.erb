@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Medical Teams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Es valido</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @medical_teams.each do |medical_team| %>
+      <tr>
+        <td><%= medical_team.es_valido %></td>
+        <td><%= link_to 'Show', medical_team %></td>
+        <td><%= link_to 'Edit', edit_medical_team_path(medical_team) %></td>
+        <td><%= link_to 'Destroy', medical_team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Medical team', new_medical_team_path %>

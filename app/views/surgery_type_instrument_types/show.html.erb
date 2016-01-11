@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Surgery type:</strong>
+  <%= @surgery_type_instrument_type.surgery_type %>
+</p>
+
+<p>
+  <strong>Instrument type:</strong>
+  <%= @surgery_type_instrument_type.instrument_type %>
+</p>
+
+<%= link_to 'Edit', edit_surgery_type_instrument_type_path(@surgery_type_instrument_type) %> |
+<%= link_to 'Back', surgery_type_instrument_types_path %>

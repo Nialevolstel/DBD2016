@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rut personal medico:</strong>
+  <%= @medical_staff.rut_personal_medico %>
+</p>
+
+<p>
+  <strong>Primer nombre:</strong>
+  <%= @medical_staff.primer_nombre %>
+</p>
+
+<p>
+  <strong>Segundo nombre:</strong>
+  <%= @medical_staff.segundo_nombre %>
+</p>
+
+<p>
+  <strong>Apellido paterno:</strong>
+  <%= @medical_staff.apellido_paterno %>
+</p>
+
+<p>
+  <strong>Apellido materno:</strong>
+  <%= @medical_staff.apellido_materno %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @medical_staff.sexo %>
+</p>
+
+<p>
+  <strong>Telefono fijo:</strong>
+  <%= @medical_staff.telefono_fijo %>
+</p>
+
+<p>
+  <strong>Telefono movil:</strong>
+  <%= @medical_staff.telefono_movil %>
+</p>
+
+<%= link_to 'Edit', edit_medical_staff_path(@medical_staff) %> |
+<%= link_to 'Back', medical_staffs_path %>
